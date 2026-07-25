@@ -1,0 +1,36 @@
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Build
+build/
+bin/
+target/
+
+# Java
+*.class
+
+# Logs
+*.log
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Tomcat
+Servers/
+
+# Maven
+.mvn/
+
+# Temporary Files
+*.tmp
+*.bak

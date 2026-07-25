@@ -1,0 +1,62 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <!-- Register Servlet -->
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.project.servlet.RegisterServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <!-- Login Servlet -->
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.project.servlet.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+<!-- Add Complaint Servlet -->
+<servlet>
+    <servlet-name>AddComplaintServlet</servlet-name>
+    <servlet-class>com.project.servlet.AddComplaintServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AddComplaintServlet</servlet-name>
+    <url-pattern>/AddComplaintServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>com.project.servlet.DeleteServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.project.servlet.UpdateServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+</servlet-mapping>
+</web-app>

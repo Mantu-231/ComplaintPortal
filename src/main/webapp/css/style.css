@@ -1,0 +1,159 @@
+/* ===== Auth Box ===== */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+.auth-box {
+    border: 1px solid #ddd;
+    padding: 30px 25px;
+    border-radius: 8px;
+    background-color: #fdfdfd; /* light background */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.auth-box h2 {
+    margin-bottom: 25px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 28px;
+    color: #333;
+}
+
+/* ===== Form ===== */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    width: 90px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    flex-grow: 1;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ===== Buttons ===== */
+button {
+    padding: 8px 18px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* ===== Links ===== */
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.register-link a {
+    color: purple;
+    text-decoration: underline;
+}
+
+/* ===== Table Styling (dashboard) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* ===== Action Buttons (dashboard) ===== */
+.action-btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.resolve-btn { background-color: #2196F3; }
+.delete-btn { background-color: #f44336; }
+
+/* ===== Dashboard role links ===== */
+.role-links a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.role-links a.active {
+    background-color: #2196F3;
+}
+
+/* ===== Dashboard Container ===== */
+.dashboard-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+/* ===== Index Page ===== */
+.auth-box h2 {
+    text-align: center;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-box .btn {
+    padding: 8px 18px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.auth-box .btn:hover {
+    background-color: #45a049;
+}
