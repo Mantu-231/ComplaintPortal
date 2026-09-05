@@ -1,91 +1,43 @@
 # ComplaintPortal
 
-A web-based Complaint Management System developed using Java, JSP, Servlets, JDBC, and MySQL. The application enables users to register, log in, submit complaints, and track their complaint status. Administrators can efficiently manage complaints by viewing, filtering, resolving, and deleting them through a secure role-based dashboard.
-
----
+A web-based Complaint Management System built with Java, JSP, Servlets, JDBC, and MySQL. Users can register, log in, submit complaints, and track status. Administrators manage complaints through a secure, role-based dashboard — viewing, filtering, resolving, and deleting as needed.
 
 ## Overview
 
-ComplaintPortal is designed to simplify the complaint management process within an organization or educational institution. The system provides separate access for users and administrators, ensuring secure complaint handling through Role-Based Access Control (RBAC).
-
----
+ComplaintPortal simplifies complaint handling within an organization or educational institution, with separate access for users and administrators secured via Role-Based Access Control (RBAC).
 
 ## Features
 
-### User Features
+**User**
+- Registration, secure login/logout, session management
+- Submit new complaints
+- View personal complaints & track status
+- Search complaints
 
-- User Registration
-- Secure Login & Logout
-- Session Management
-- Submit New Complaint
-- View Personal Complaints
-- Track Complaint Status
-- Search Complaints
+**Admin**
+- Secure admin login
+- View all complaints
+- Filter complaints by role
+- Resolve or delete complaints
+- Complaint management dashboard
 
-### Admin Features
+## Tech Stack
 
-- Secure Admin Login
-- View All Complaints
-- Filter Complaints by Role
-- Resolve Complaints
-- Delete Complaints
-- Complaint Management Dashboard
-
----
-
-## Technologies Used
-
-### Backend
-
-- Java
-- JSP
-- Servlets
-- JDBC
-
-### Frontend
-
-- HTML5
-- CSS3
-- JavaScript
-- React (Search Component)
-
-### Database
-
-- MySQL
-
-### Server
-
-- Apache Tomcat 10
-
-### Development Environment
-
-- Eclipse IDE
-
----
+| Category | Tools |
+|---|---|
+| Backend | Java, JSP, Servlets, JDBC |
+| Frontend | HTML5, CSS3, JavaScript, React (search component) |
+| Database | MySQL |
+| Server | Apache Tomcat 10 |
+| IDE | Eclipse |
 
 ## System Modules
 
-### Authentication Module
-
-- User Registration
-- Login Validation
-- Session Handling
-- Logout
-
-### Complaint Module
-
-- Add Complaint
-- View Complaint
-- Complaint Status Tracking
-
-### Administration Module
-
-- Dashboard
-- Complaint Filtering
-- Complaint Resolution
-- Complaint Deletion
-
----
+| Module | Responsibilities |
+|---|---|
+| Authentication | Registration, login validation, session handling, logout |
+| Complaint | Add, view, and track complaint status |
+| Administration | Dashboard, filtering, resolution, deletion |
 
 ## Project Structure
 
@@ -116,114 +68,70 @@ ComplaintPortal/
 └── .gitignore
 ```
 
----
-
 ## Database
 
-### Database Name
+**Database name:** `complaintportal`
 
-```
-complaintportal
-```
-
-### Tables
-
-- users
-- complaints
-
----
+**Tables:** `users`, `complaints`
 
 ## User Roles
 
-### User
-
-- Register
-- Login
-- Submit Complaint
-- View Only Own Complaints
-
-### Admin
-
-- View All Complaints
-- Resolve Complaints
-- Delete Complaints
-- Filter Complaints
-
----
+| Role | Permissions |
+|---|---|
+| User | Register, log in, submit complaints, view own complaints only |
+| Admin | View all complaints, filter, resolve, delete |
 
 ## Security Features
 
-- Session-Based Authentication
+- Session-based authentication
 - Role-Based Access Control (RBAC)
-- JDBC Prepared Statements
-- Restricted Admin Operations
-- User-Specific Complaint Access
-
----
+- JDBC prepared statements
+- Restricted admin operations
+- User-specific complaint access
 
 ## Installation
 
-### Clone Repository
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/your-username/ComplaintPortal.git
 ```
 
-### Configure Database
+**2. Configure the database**
 
-1. Create a MySQL database named:
-
-```
-complaintportal
-```
-
-2. Import:
+Create a MySQL database named `complaintportal`, then import the schema:
 
 ```
-complaintportal.sql
+database/complaintportal.sql
 ```
 
-### Configure Eclipse
+**3. Configure Eclipse**
 
-- Import Dynamic Web Project
-- Add MySQL Connector/J
+- Import as a Dynamic Web Project
+- Add the MySQL Connector/J library
 - Configure Apache Tomcat
 - Run on Server
 
----
-
 ## Default Admin Account
 
-Email
-
 ```
-admin@gmail.com
-```
-
-Password
-
-```
-admin123
+Email:    admin@gmail.com
+Password: admin123
 ```
 
----
+> ⚠️ **Demo credentials only.** Change these before deploying anywhere beyond local development — see [Future Enhancements](#future-enhancements) for planned password encryption.
 
 ## Future Enhancements
 
-- Email Notifications
-- Password Encryption
-- File Attachment Support
-- Complaint Priority Levels
-- Dashboard Analytics
-- OTP-Based Authentication
-- Responsive Mobile Interface
-
----
+- Email notifications
+- Password encryption
+- File attachment support
+- Complaint priority levels
+- Dashboard analytics
+- OTP-based authentication
+- Responsive mobile interface
 
 ## Author
 
 **Mantu Kumar**
-
-B.Tech Computer Science and Engineering
-
-GITAM University
+B.Tech Computer Science and Engineering, GITAM University
