@@ -1,24 +1,23 @@
 # ComplaintPortal
 
-A web-based Complaint Management System built with Java, JSP, Servlets, JDBC, and MySQL. Users can register, log in, submit complaints, and track status. Administrators manage complaints through a secure, role-based dashboard — viewing, filtering, resolving, and deleting as needed.
+A web-based complaint management system built with Java, JSP, Servlets, JDBC and MySQL. Users register, log in, submit complaints and track their status. Administrators manage all complaints from a role-based dashboard, where they can view, filter, resolve and delete them.
 
-## Overview
+## Screenshots
 
-ComplaintPortal simplifies complaint handling within an organization or educational institution, with separate access for users and administrators secured via Role-Based Access Control (RBAC).
+| Login | Dashboard |
+|---|---|
+| ![Login](docs/screenshots/login.png) | ![Dashboard](docs/screenshots/dashboard.png) |
 
 ## Features
 
 **User**
-- Registration, secure login/logout, session management
-- Submit new complaints
-- View personal complaints & track status
-- Search complaints
+- Registration, login, logout and session management
+- Submit complaints and track their status
+- View and search personal complaints
 
 **Admin**
-- Secure admin login
-- View all complaints
-- Filter complaints by role
-- Resolve or delete complaints
+- Admin login with role-based access
+- View, filter, resolve and delete all complaints
 - Complaint management dashboard
 
 ## Tech Stack
@@ -29,109 +28,37 @@ ComplaintPortal simplifies complaint handling within an organization or educatio
 | Frontend | HTML5, CSS3, JavaScript, React (search component) |
 | Database | MySQL |
 | Server | Apache Tomcat 10 |
-| IDE | Eclipse |
 
-## System Modules
-
-| Module | Responsibilities |
-|---|---|
-| Authentication | Registration, login validation, session handling, logout |
-| Complaint | Add, view, and track complaint status |
-| Administration | Dashboard, filtering, resolution, deletion |
-
-## Project Structure
-
-```
-ComplaintPortal/
-│
-├── src/
-│   └── com/
-│       └── project/
-│           ├── db/
-│           └── servlet/
-│
-├── WebContent/
-│   ├── css/
-│   ├── images/
-│   ├── login.jsp
-│   ├── register.jsp
-│   ├── dashboard.jsp
-│   ├── addComplaint.jsp
-│   └── logout.jsp
-│
-├── database/
-│   └── complaintportal.sql
-│
-├── screenshots/
-│
-├── README.md
-└── .gitignore
-```
-
-## Database
-
-**Database name:** `complaintportal`
-
-**Tables:** `users`, `complaints`
-
-## User Roles
-
-| Role | Permissions |
-|---|---|
-| User | Register, log in, submit complaints, view own complaints only |
-| Admin | View all complaints, filter, resolve, delete |
-
-## Security Features
+## Access Control
 
 - Session-based authentication
-- Role-Based Access Control (RBAC)
-- JDBC prepared statements
-- Restricted admin operations
-- User-specific complaint access
+- Role-based access control: users see only their own complaints, admins manage all
+- JDBC prepared statements for database access
 
-## Installation
+## Run Locally
 
-**1. Clone the repository**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Mantu-231/ComplaintPortal.git
+   ```
+2. Create a MySQL database named `complaintportal` and import `complaintportal.sql`.
+3. In Eclipse, import the project as a Dynamic Web Project, add the MySQL Connector/J library, configure Apache Tomcat 10 and run on the server.
 
-```bash
-git clone https://github.com/your-username/ComplaintPortal.git
-```
-
-**2. Configure the database**
-
-Create a MySQL database named `complaintportal`, then import the schema:
-
-```
-database/complaintportal.sql
-```
-
-**3. Configure Eclipse**
-
-- Import as a Dynamic Web Project
-- Add the MySQL Connector/J library
-- Configure Apache Tomcat
-- Run on Server
-
-## Default Admin Account
+Demo admin account (local use only):
 
 ```
 Email:    admin@gmail.com
 Password: admin123
 ```
 
-> ⚠️ **Demo credentials only.** Change these before deploying anywhere beyond local development — see [Future Enhancements](#future-enhancements) for planned password encryption.
-
 ## Future Enhancements
 
+- Password hashing (BCrypt)
 - Email notifications
-- Password encryption
-- File attachment support
+- File attachments
 - Complaint priority levels
-- Dashboard analytics
 - OTP-based authentication
-- Responsive mobile interface
 
 ## Author
 
-**Mantu Kumar**
-B.Tech Computer Science and Engineering, GITAM University
+**Mantu Kumar**, CSE student at GITAM University (Class of 2027)
